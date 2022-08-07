@@ -14,10 +14,43 @@ const Footer = () => {
                     <div className='col-md-2 col-lg-2 col-xl-2 mx-auto mt-3'>
                         <h5 className='tect-uppercase mb-4 font-weight-bold text-warning'>Products</h5>
                         <p>
-                            <a href='' className='tect-white'>Providers</a>
+                            <a href='' className='tect-white'style={{textDecoration: 'none'}}  >Providers</a>
+                        </p>
+                        <p>
+                            <a href='' className='tect-white'style={{textDecoration: 'none'}}  >Providers</a>
+                        </p>
+                        <p>
+                            <a href='' className='tect-white'style={{textDecoration: 'none'}}  >Providers</a>
+                        </p>
+                        <p>
+                            <a href='' className='tect-white'style={{textDecoration: 'none'}}  >Providers</a>
                         </p>
 
                     </div>
+                {/*  */}
+
+                    <div className='col-md-3 col-lg-2 col-xl-2 mt-3'>
+                        <h5 className='text-uppercase mb-4 font-weight-bold text-warning'>Useful lins</h5>
+                        <p>
+                            <a href='' className='tect-white'style={{textDecoration: 'none'}}  >Providers</a>
+                        </p>
+                        <p>
+                            <a href='' className='tect-white'style={{textDecoration: 'none'}}  >Providers</a>
+                        </p>
+                        <p>
+                            <a href='' className='tect-white'style={{textDecoration: 'none'}}  >Providers</a>
+                        </p>
+                        <p>
+                            <a href='' className='tect-white'style={{textDecoration: 'none'}}  >Help</a>
+                        </p>
+
+                    </div>
+
+                    <div className='col-md-4 col-lg-3 col-lg-3 col-xl-3 mx-auto mt-3'>
+                        <h5 className='text-uppercase mb-4 font-weight-bold text-warning'> Contact</h5>
+
+                    </div>
+
 
                 </div>
 
