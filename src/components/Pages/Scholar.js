@@ -1,11 +1,12 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
+import Services from '../Home/Services';
 
 const Scholar = () => {
     return (
         <div>
-            Scholar.js
-
+         
+             <Services></Services>
             <Footer></Footer>
         </div>
     );
