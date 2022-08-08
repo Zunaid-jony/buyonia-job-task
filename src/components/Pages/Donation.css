@@ -1,0 +1,28 @@
+.mainCard{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-top: 100px;
+    
+   
+
+}
+h1{
+    text-align: center;
+}
+.aa{
+    background-image: url(https://i.ibb.co/Fgtw6W4/18059286-219-Um-Ft-YWRhbl9nb-Gl0d-GVy-LTAy.jpg);
+
+    /* text-align: center; */
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    height: 320px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    
+}
+.aa p ,h4{
+    margin: 5px;
+}

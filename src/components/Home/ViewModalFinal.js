@@ -14,6 +14,7 @@ const ViewModalFinal = ({books,deleteBook}) => {
             <td className='delete-btn' onClick={()=> deleteBook(book.isbn)}>
                 <AiFillDelete></AiFillDelete>
                 
+                
 
                
             </td>
