@@ -1,5 +1,5 @@
 import React from 'react';
-import Img from '../imgs/section1.jpg'
+// import Img from '../imgs/section1.jpg'
 import './Homesection.css'
 
 
@@ -43,7 +43,8 @@ const Homesection = () => {
                          {/* img */}
 
                          <div  className='col-md-6 '>
-                             <img   style={{width:'100%'}} src={Img}></img>
+                       
+                             <img   style={{width:'100%'}} src="https://i.ibb.co/KzqGZvz/section1.jpg" alt="section1" border="0"></img>
                               
                          </div>
 

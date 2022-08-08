@@ -6,7 +6,7 @@ const Scholar = () => {
     return (
         <div>
          
-             <Services></Services>
+             {/* <Services></Services> */}
             <Footer></Footer>
         </div>
     );

@@ -60,14 +60,14 @@ useEffect(()=>{
 },[books])
   return (
     <div style={{ height: "300px" }}>
-      <button
+      {/* <button
         type="button"
         className="btn btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
-        Launch demo modal
-      </button>
+       
+      </button> */}
 
       <div
         className="modal fade"
@@ -101,20 +101,45 @@ useEffect(()=>{
                     <div className="col-lg-6">
                         {/* form */}
 
-                      <form 
+                     <div className="from-section  justify-content-end">
+                       {/* img */}
+                      
+                       <form 
+                       
                       onSubmit={handleAddBookSubmit}
                       
-                      style={{ backgroundColor: 'gainsboro' , width:'270px'}}> 
+                      style={{ backgroundColor: 'gainsboro' , width:'270px',textAlign:'center',marginLeft:'-22PX'}}> 
                         <div class="mb-3">
+                        <img class="img-fluid" style={{width:"90px", borderRadius: '50px',textAlign:'center'}} src={scholarImage} ></img>
 
 
                           <label for="exampleInputEmail1" class="form-label">
-                          scholars name
+                  
+                          </label>
+                          
+                          
+                          <h6>{scholarName}</h6>
+                            
+                         
+                        
+                        </div>
+
+
+
+                        <div class="mb-3">
+                       
+
+
+                          <label for="exampleInputEmail1" class="form-label">
+                          Your Name
+                  
                           </label>
                           
                           <input
                           onChange={(e) => setTitle(e.target.value)} value={title}
                             type="text"
+                   
+                           
                             class="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
@@ -125,11 +150,11 @@ useEffect(()=>{
 
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            Email phone 
+                            Your Email
                           </label>
                           <input
                             onChange={(e) => setAuther(e.target.value)} value={author}
-                            type="text"
+                            type="email"
                             class="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
@@ -139,11 +164,11 @@ useEffect(()=>{
 
                         <div class="mb-3">
                           <label for="exampleInputEmail1" class="form-label">
-                            Email address
+                           Date
                           </label>
                           <input
                              onChange={(e) => setIsbn(e.target.value)} value={isbn}
-                            type="text"
+                            type="date"
                             class="form-control"
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
@@ -152,10 +177,13 @@ useEffect(()=>{
                         </div>
                         
                        
-                        <button type="submit" class="btn btn-primary">
+                        <button style={{width:"260px"}} type="submit" class="btn btn-primary">
                           Submit
                         </button>
                       </form>
+
+
+                     </div>
                     </div>
                   </div>
                 </div>
@@ -164,16 +192,16 @@ useEffect(()=>{
            {/* <p> hi</p>   */}
            {/* tabol */}
            <div>
-               <p>hi</p> 
+               
                {books.length > 0 && <>
                <div table-reesponsive>
                    <table className="table">
                        <thead>
                            <tr>
-                               <th>Isbn</th>
-                               <th>title</th>
-                               <th>author</th>
-                               <th>Delete</th>
+                               <th>DATE</th>
+                               <th>NAME</th>
+                               <th>EMAIL</th>
+                               <th>DELETE</th>
                            </tr>
                        </thead>
                        <tbody> 

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const TableSection = () => {
+const componentName = () => {
     return (
         <div>
-            TableSection
+            
         </div>
     );
 };
 
-export default TableSection;
+export default componentName;
