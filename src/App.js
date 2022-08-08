@@ -8,6 +8,7 @@ import Home from './components/Home/Home';
 import Information from './components/Pages/Information';
 import Scholar from './components/Pages/Scholar';
 import Donation from './components/Pages/Donation';
+import View from './components/Home/View';
 
 
 
@@ -22,6 +23,8 @@ function App() {
       <Route path="/home" element={<Home></Home>} />
       <Route path="/information" element={<Information></Information>} />
       <Route path="/scholar" element={<Scholar></Scholar>} />
+      {/* <Route path="/view" element={<View></View>} />
+      <Route path="/view/:viewId" element={<View></View>} /> */}
       <Route path="/donation" element={<Donation></Donation>} />
       
     </Routes>
