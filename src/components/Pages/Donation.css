@@ -17,13 +17,18 @@ h1{
     width: 90%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-align: center;
-    height: 320px;
+    height: 420px;
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     text-align: left;
     
 }
-.aa p ,h4{
+.aa:hover{
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+
+}
+
+.aa p ,h5{
     margin: 5px;
     
 }

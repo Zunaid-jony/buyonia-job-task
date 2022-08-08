@@ -1,12 +1,15 @@
-import { CardElement, useStripe } from '@stripe/react-stripe-js';
+import { CardElement, useElements, useStripe } from '@stripe/react-stripe-js';
 import React from 'react';
 
 
 const CheckoutForm = () => {
     const stripe = useStripe()
-    const handleSubmit= event =>{
+    const elemant = useElements()
+    const handleSubmit= async (event) =>{
 
         event.preventDefault();
+
+        
 
     }
     return (
