@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../Footer/Footer';
 import './Donation.css'
+import { Link } from 'react-router-dom';
 
 const Donation = () => {
     return (
@@ -17,7 +18,11 @@ const Donation = () => {
                <h4> </h4>
                <h4> </h4>
                <br/>
-               <button style={{width:'240px'}} type="button" class="btn btn-primary"> DONATION </button>
+               <button style={{width:'240px'}} type="button" class="btn btn-primary"> 
+               <Link style={{color:'whitesmoke',textDecoration:'none'}} to='/pay'> DONATION </Link>
+               
+               </button>
+           
 
                </div>
                {/*  */}
@@ -27,7 +32,10 @@ const Donation = () => {
                <p>Free education is education funded through government spending or charitable organizations rather than </p>
 
               
-               <button style={{width:'240px'}} type="button" class="btn btn-primary"> DONATION </button>
+               <button style={{width:'240px'}} type="button" class="btn btn-primary"> 
+               <Link style={{color:'whitesmoke',textDecoration:'none'}} to='/pay'> DONATION </Link>
+               
+               </button>
                </div>
                {/*  */}
 
@@ -36,14 +44,20 @@ const Donation = () => {
                <br/>
                <p>Free education is education funded through government spending or charitable organizations rather than </p>
               
-               <button style={{width:'240px'}} type="button" class="btn btn-primary"> DONATION </button>
+               <button style={{width:'240px'}} type="button" class="btn btn-primary"> 
+               <Link style={{color:'whitesmoke',textDecoration:'none'}} to='/pay'> DONATION </Link>
+               
+               </button>
                </div>
                <div className='aa'>
                <h4>mosque construction project </h4>
                <br/>
                <p>Free education is education funded through government spending or charitable organizations rather than </p>
                
-               <button style={{width:'240px'}} type="button" class="btn btn-primary"> DONATION </button>
+               <button style={{width:'240px'}} type="button" class="btn btn-primary"> 
+               <Link style={{color:'whitesmoke',textDecoration:'none'}} to='/pay'> DONATION </Link>
+               
+               </button>
                </div>
               
             </div>
