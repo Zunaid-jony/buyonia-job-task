@@ -1,4 +1,18 @@
 import React, { useEffect, useState } from "react";
+import ViewModalFinal from "./ViewModalFinal";
+
+// values of local storage
+
+const getDatafromLS=()=>{
+    const data = localStorage.getItem('books')
+    if(data){
+        return JSON.parse(data);
+    }
+    else{
+        return []
+    }
+}
+// 
 
 const View = ({ modal }) => {
   const { scholarImage, scholarName, nid, status, city, phone, _id } = modal;
@@ -6,7 +20,7 @@ const View = ({ modal }) => {
 
 //   main array of object state
 
-const [books, setbooks] = useState([])
+const [books, setbooks] = useState(getDatafromLS())
 
 // input field
   const[ title, setTitle] = useState('')
@@ -23,12 +37,21 @@ const handleAddBookSubmit=(e)=>{
         author:author,
         isbn:isbn
     }
+  
+
     setbooks([...books,book])
     setTitle('')
     setAuther('')
     setIsbn('')
 
 }
+  // delete book
+  const deleteBook=(isbn)=>{
+     const filterBooks = books.filter((eliment,index)=>{
+         return eliment.isbn !== isbn
+     })
+     setbooks(filterBooks);
+  }
 // DATA Save to local storage
 useEffect(()=>{
     localStorage.setItem('books',JSON.stringify(books))
@@ -141,7 +164,34 @@ useEffect(()=>{
            {/* <p> hi</p>   */}
            {/* tabol */}
            <div>
-               <p>hi</p>  
+               <p>hi</p> 
+               {books.length > 0 && <>
+               <div table-reesponsive>
+                   <table className="table">
+                       <thead>
+                           <tr>
+                               <th>Isbn</th>
+                               <th>title</th>
+                               <th>author</th>
+                               <th>Delete</th>
+                           </tr>
+                       </thead>
+                       <tbody> 
+                           <ViewModalFinal 
+                           
+                           books={books}
+                           deleteBook={ deleteBook}
+                           
+                           
+                           ></ViewModalFinal>
+                       </tbody>
+                        
+                   </table>
+               </div>
+               
+               
+               </>}
+
                {books.length <1 && <div> <h6>no books are added yet</h6></div>}
            </div>
 
