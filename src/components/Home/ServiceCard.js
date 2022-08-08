@@ -2,7 +2,7 @@ import React from 'react';
 import './ServiceCard.css'
 import { Link } from 'react-router-dom';
 
-const ServiceCard = ({card}) => {
+const ServiceCard = ({card,setModal}) => {
     const {scholarImage,scholarName,nid,status, city,phone,_id} = card;
     // const url =`/view/${_id}`
     return (
@@ -13,7 +13,20 @@ const ServiceCard = ({card}) => {
          <p >  {city}</p>
          <p >  {phone}</p>
          {/* style={{textAlign: 'left', margin: '10px'}} */}
-         <button  class="btn btn-primary"><Link style={{color:'wheat',textDecoration:'none'}} to='/adcdfdf'> Booing </Link> </button>
+         {/* <button 
+       
+         
+         class="btn btn-primary"> </button> */}
+
+       <button
+        onClick={() => setModal(card)}
+        type="button"
+        className="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+       
+       > BOOKING</button>
+         {/* <Link style={{color:'wheat',textDecoration:'none'}} to='/'> Booing </Link> */}
          
         </div>
     );

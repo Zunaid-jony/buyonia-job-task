@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import ServiceCard from './ServiceCard';
 import './service.css'
+import View from './View';
 
 const Services = () => {
 
         const [services, setService] = useState([])
+        const[modal, setModal] = useState(null)
         useEffect(()=>{
             fetch('https://limitless-lowlands-32082.herokuapp.com/schedule')
             .then(responce => responce.json())
@@ -19,10 +21,17 @@ const Services = () => {
                 services.map(card => <ServiceCard
                 
                 key={card._id}
+                setModal={setModal}
                 card ={card}
+             
                 ></ServiceCard>)
             }
         </div>
+        {modal && <View modal={modal}
+        
+        ></View>
+
+        }
         </div>
     );
 };
