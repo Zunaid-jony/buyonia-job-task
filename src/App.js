@@ -10,6 +10,7 @@ import Scholar from './components/Pages/Scholar';
 import Donation from './components/Pages/Donation';
 import View from './components/Home/View';
 import DonationPay from './components/Pages/DonationPay';
+import Login from './components/Registration/Login';
 
 
 
@@ -27,6 +28,7 @@ function App() {
       <Route path="/scholar" element={<Scholar></Scholar>} />
       <Route path="/view" element={<View></View>} />
       <Route path="/pay" element={<DonationPay></DonationPay>} />
+      <Route path="/login" element={<Login></Login>} />
       
       {/* <Route path="/table" element={<TableSection></TableSection>} /> */}
       {/* <Route path="/view/:viewId" element={<View></View>} /> */}

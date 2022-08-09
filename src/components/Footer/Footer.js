@@ -14,7 +14,11 @@ const Footer = () => {
             <div className='container tect-center tet-md-left'>
                 <div className='row tect-center tect-md-left'>
                     <div className='col-md-3 col-lg-3 col-xl-3 mx-auto mt-3'>
-                        <h5 className='tet-uppercase mb-4 font-weight-bold text-warning '> Buaniya </h5>
+                        <h5 className='tet-uppercase mb-4 font-weight-bold text-warning '>
+                            
+                        <img style={{width:'70px',height:'50px'}} src="https://i.ibb.co/zFn7x1j/24766669-indonesian-halal-logo-2022.jpg" alt="24766669-indonesian-halal-logo-2022" border="0"/>
+                             
+                              </h5>
                         <p>Islamic University, Bangladesh, commonly referred to as Islamic University, Kushtia shortly IU, is one of the major public research and PhD granting universities in Bangladesh</p>
 
                     </div>

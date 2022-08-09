@@ -10,7 +10,10 @@ const Scholar = () => {
     //     setDate(date)
     // }
   return (
-    <div>
+    <div >
+      <br></br>
+      <br></br>
+      <br></br>
         <h2 className="text-center mt-5"> 🆂🅲🅷🅾🅻🅰🆁 🆂🅲🅷🅴🅳🆄🅻🅴</h2>
         {/* <div style={{width:'100px'}} className="container mt-5 mb-5">
             

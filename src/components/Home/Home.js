@@ -9,7 +9,7 @@ import Services from './Services';
 const Home = () => {
     return (
         <div>
-          
+          <br></br>
             <Carousel></Carousel>
             <Homesection></Homesection>
             {/* <Service></Service> */}

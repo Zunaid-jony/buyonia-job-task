@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom';
 
 const Donation = () => {
     return (
-        <div>
+        <div className='mt-5'>
+            <br></br>
+            <br></br>
+            <br></br>
                        <h2 className='text-center mt-5'> 🅳🅾🅽🅰🆃🅸🅾🅽 🅿🅰🅶🅴 </h2>
             
             <div className=' mainCard container'>

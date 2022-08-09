@@ -5,7 +5,7 @@ const GooglePay = () => {
     return (
         <div className="App">
       
-      <hr />
+    
       <GooglePayButton
         environment="TEST"
         paymentRequest={{

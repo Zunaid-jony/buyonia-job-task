@@ -6,7 +6,10 @@ import './Information.css'
 const Information = () => {
     return (
         <div>
-            <section className='hero'>
+            <br></br>
+            <br></br>
+            <br></br>
+            <section className='hero mt-35'>
                  <div className='container'>
                      <h1 className='text-center containe'>🅸🆂🅻🅰🅼🅸🅲 </h1>
                      <br></br>
@@ -62,7 +65,15 @@ const Information = () => {
              {/* secentd */}
              <section className='hero'>
                  <div className='container'>
+                     <br></br>
+                     <br></br>
+                     <br></br>
+                     <br></br>
                      <h1 className='text-center containe'> 🅷🅾🅻🆈 🆀🆄🆁'🅰🅽</h1>
+                     <br></br>
+                     <br></br>
+                     <br></br>
+                     <br></br>
                      <br></br>
                      <div className='row'>
 
@@ -110,8 +121,16 @@ const Information = () => {
                  </div>
 
              </section>
+             
              <section>
+             <br></br>
+                     <br></br>
+                     <br></br>
+                     <br></br>
                  <Services></Services>
+                 <br></br>
+             <br></br>
+             <br></br>
              </section>
 
 
