@@ -19,11 +19,13 @@ const ServiceCard = ({card,setModal}) => {
          class="btn btn-primary"> </button> */}
 
        <button
+      
         onClick={() => setModal(card)}
         type="button"
-        className="btn btn-primary card-buttos"
+        className="btn btn-primary card-buttos  align-items-start"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
+        style={{alignItems:'center'}}
        
        > BOOKING</button>
          {/* <Link style={{color:'wheat',textDecoration:'none'}} to='/'> Booing </Link> */}

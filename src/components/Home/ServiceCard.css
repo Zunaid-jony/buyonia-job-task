@@ -17,6 +17,7 @@
 }
 .card-buttos{
     margin-bottom: 30px;
+    align-items: center;
 
 }
 .cards:hover{
