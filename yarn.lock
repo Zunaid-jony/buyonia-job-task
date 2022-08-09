@@ -1193,6 +1193,13 @@
     "minimatch" "^3.1.2"
     "strip-json-comments" "^3.1.1"
 
+"@google-pay/button-react@^3.0.0":
+  "integrity" "sha512-GFRlPrr4rK4iZz1EqsdSDG/gP/UjUAGg+fU3Ar7OacquhCkn2Npr5Bqh7Zyxztx3WzsSYDWA2VPaXIr/JQq0BQ=="
+  "resolved" "https://registry.npmjs.org/@google-pay/button-react/-/button-react-3.0.0.tgz"
+  "version" "3.0.0"
+  dependencies:
+    "@types/googlepay" "^0.6.3"
+
 "@humanwhocodes/config-array@^0.10.4":
   "integrity" "sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw=="
   "resolved" "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.10.4.tgz"
@@ -1894,6 +1901,11 @@
     "@types/express-serve-static-core" "^4.17.18"
     "@types/qs" "*"
     "@types/serve-static" "*"
+
+"@types/googlepay@^0.6.3":
+  "integrity" "sha512-PTt/UCllzl8z5HmhymPpSj6uENZvVKZvCBYdDVmbBVJnLStitxtWrterAOQZkKGlqVdzxNXYeif5hOAMNMS5mw=="
+  "resolved" "https://registry.npmjs.org/@types/googlepay/-/googlepay-0.6.4.tgz"
+  "version" "0.6.4"
 
 "@types/graceful-fs@^4.1.2":
   "integrity" "sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw=="
