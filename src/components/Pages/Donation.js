@@ -61,7 +61,7 @@ const Donation = () => {
               
                <p>Free education is education funded through government spending or charitable  </p>
                
-               <button  style={{width:'240px'}} type="button" class="btn btn-primary"> 
+               <button  style={{width:'240px',marginTop:'73PX'}} type="button" class="btn btn-primary"> 
                <Link style={{color:'whitesmoke',textDecoration:'none'}} to='/pay'> DONATION </Link>
                
                </button>

@@ -21,7 +21,7 @@ const ServiceCard = ({card,setModal}) => {
        <button
         onClick={() => setModal(card)}
         type="button"
-        className="btn btn-primary"
+        className="btn btn-primary card-buttos"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
        
