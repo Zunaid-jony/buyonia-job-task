@@ -11,12 +11,16 @@ import Donation from './components/Pages/Donation';
 import View from './components/Home/View';
 import DonationPay from './components/Pages/DonationPay';
 import Login from './components/Registration/Login';
+import { CartProvider } from 'react-use-cart';
+import ViewCart from './components/Pages/ViewCart';
+
 
 
 
 
 function App() {
   return (
+    <CartProvider>
    <BrowserRouter>
    <Header></Header>
     <Routes>
@@ -28,6 +32,7 @@ function App() {
       <Route path="/scholar" element={<Scholar></Scholar>} />
       <Route path="/view" element={<View></View>} />
       <Route path="/pay" element={<DonationPay></DonationPay>} />
+      <Route path="/cart" element={<ViewCart></ViewCart> } />
       <Route path="/login" element={<Login></Login>} />
       
       {/* <Route path="/table" element={<TableSection></TableSection>} /> */}
@@ -37,6 +42,7 @@ function App() {
     </Routes>
    
    </BrowserRouter>
+   </CartProvider>
   );
 }
 

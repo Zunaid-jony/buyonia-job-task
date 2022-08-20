@@ -2,8 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css"
 import { BiLogIn } from 'react-icons/bi';
+import { BsCartCheck } from 'react-icons/bs';
+import { useCart } from 'react-use-cart';
 
 const Header = () => {
+  const { isEmpty,
+    totalUniqueItems,
+    items,
+    totalItems,
+    cartTotal,
+    updateItemQuantity,
+    removeItem,
+    emptyCart,} = useCart()
   return (
     <div className=" shadow  bg-body rounded  fixed-top">
       <nav  className="navbar navbar-expand-lg navbar-light   container   ">
@@ -50,8 +60,14 @@ const Header = () => {
               
               {/*  */}
               <li className="nav-item">
+                
                 <Link  className="nav-link" to="/donation">
                   Donation
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link   className="nav-link" to="/cart">
+                   <BsCartCheck></BsCartCheck>  {totalItems}
                 </Link>
               </li>
               <li className="nav-item">

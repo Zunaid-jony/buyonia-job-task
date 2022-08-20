@@ -22,7 +22,7 @@ const ServiceCard = ({card,setModal}) => {
       
         onClick={() => setModal(card)}
         type="button"
-        className="btn btn-primary card-buttos  align-items-start"
+        className="btn btn-primary card-buttos "
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
         style={{alignItems:'center'}}
